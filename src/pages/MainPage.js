@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import NewsItemsList from '../componets/NewsItemsList';
-
-const API_KEY = 'xKqCOD9vnLNt3Nr6wWyCpaR_43CqNChbdJGlyDODSdM';
 var axios = require("axios").default;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 let searchtopic = 'GPU'
 
@@ -13,7 +12,7 @@ var options = {
     headers: {
       'x-api-key': API_KEY
     }
-  };
+};
 
 class Mainpage extends Component {
     state = {
@@ -42,10 +41,4 @@ class Mainpage extends Component {
     }
 }
 
-
-
 export default Mainpage;
-
-
-//            <NewsItemList newsItems = {DUMM_DATA["articles"][0]} /> 
-
