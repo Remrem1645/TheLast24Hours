@@ -3,12 +3,12 @@ import NewsItemsList from '../componets/NewsItemsList';
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-let searchtopic = 'GPU'
+let searchtopic = 'GAMING'
 
 var options = {
     method: 'GET',
     url: 'https://api.newscatcherapi.com/v2/search',
-    params: {q: searchtopic, lang: 'en', sort_by: 'relevancy', page: '1'},
+    params: {q: searchtopic, lang: 'en', sort_by: 'relevancy', page: '1', countries: 'US'},
     headers: {
       'x-api-key': API_KEY
     }

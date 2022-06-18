@@ -6,6 +6,7 @@ function NewsItemsList (props) {
         <ul>
             {props.newsItems.map(data => (
                 <NewsItems
+                    key = {data._id}
                     title = {data.title}
                     link = {data.link}
                     website = {data.clean_url}
@@ -13,7 +14,6 @@ function NewsItemsList (props) {
                     summary = {data.summary}
                     image = {data.media}
                     rateScore = {data._score}
-                    id = {data._id}
                 />
             ))}
         </ul>
