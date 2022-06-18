@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
+import NewsItemsList from '../componets/NewsItemsList';
 
-const API_KEY = 'WcWfxRP9t75ZjhQ85zVXz0K6mJscmo3KCzUgRi9G_PM';
+const API_KEY = 'xKqCOD9vnLNt3Nr6wWyCpaR_43CqNChbdJGlyDODSdM';
 var axios = require("axios").default;
 
+let searchtopic = 'GPU'
 
 var options = {
     method: 'GET',
     url: 'https://api.newscatcherapi.com/v2/search',
-    params: {q: 'Bitcoin', lang: 'en', sort_by: 'relevancy', page: '1'},
+    params: {q: searchtopic, lang: 'en', sort_by: 'relevancy', page: '1'},
     headers: {
       'x-api-key': API_KEY
     }
@@ -27,12 +29,11 @@ class Mainpage extends Component {
 
     }
 
-
     render(){
         return ( 
             <section>
-                <h1>titles</h1>
-                {this.state.articles.map(article =><h1 key = {article.id}> {article.title} </h1>)}
+                <h1>title</h1>
+                <NewsItemsList newsItems = {this.state.articles}/>
             </section>
         )
     }
