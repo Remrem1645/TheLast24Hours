@@ -26,6 +26,9 @@ class Mainpage extends Component {
             console.log(response.data);
             this.setState({articles: response.data["articles"]});
         })
+        .catch(function (error) {
+            console.error(error);
+        });
 
     }
 

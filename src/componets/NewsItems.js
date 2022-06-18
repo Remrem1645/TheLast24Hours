@@ -1,5 +1,4 @@
- 
-function NewsItems(props){
+ function NewsItems(props){
     return (
         <ul key = {props.id}>
             <div>
