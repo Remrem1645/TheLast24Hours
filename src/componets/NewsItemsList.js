@@ -1,9 +1,10 @@
 import NewsItems from "./NewsItems";
+import '../App.css';
 
 function NewsItemsList (props) {
 
     return (
-        <ul>
+        <ul id = "list">
             {props.newsItems.map(data => (
                 <NewsItems
                     key = {data._id}

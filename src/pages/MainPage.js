@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import NewsItemsList from '../componets/NewsItemsList';
+import '../App.css';
+
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -34,8 +36,8 @@ class Mainpage extends Component {
     render(){
         return ( 
             <section>
-                <h1>title</h1>
-                <NewsItemsList newsItems = {this.state.articles}/>
+                <h1 id="head">24 Hour News</h1>
+                <NewsItemsList newsItems = {this.state.articles} id = "list"/>
             </section>
         )
     }
