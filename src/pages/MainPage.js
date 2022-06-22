@@ -36,7 +36,8 @@ class Mainpage extends Component {
     render(){
         return ( 
             <section>
-                <h1 id="head">What's Happening?</h1>
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap" rel="stylesheet"></link>
+                <h1 id="head">So, what's happening?</h1>
                 <NewsItemsList newsItems = {this.state.articles} id = "list"/>
             </section>
         )
