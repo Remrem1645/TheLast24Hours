@@ -59,10 +59,12 @@ font-weight: lighter;
 }
 #list{
 
- width:90%;
+ width:100%;
  column-count: 2;
  text-align: center;
- display: inline-block;
+
+ /*display: inline-block;*/
+ left: 5%;
 }
 /*
 #content button{
@@ -83,10 +85,13 @@ font-weight: lighter;
    border-radius: 25px;
    border: 0.1px solid #272727;
    align-self: center;
-  
+   height: 30%;
+   width: 80%;
+   left: 5%;
+   text-overflow: ellipsis;
 
-   
-   margin: 2em;
+ 
+   margin: 20px;
    display: inline-block;
    transition-duration: .25s;
 }
@@ -104,8 +109,8 @@ font-weight: lighter;
    
    color: rgb(255, 255, 255);
    position: relative;
-   top: 50%;
-   padding: 1em;
+   
+   
    
  
 }
@@ -118,9 +123,10 @@ font-size: 22px;
 }
 
 #pic{
-   max-width: 100%;
-   height: auto;
-   object-fit: fill;
+   height: 250px; /* play around with this number until you get the height you need */
+   /*width: auto;*/
+   width: 100%;
+   object-fit: cover;
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
 
