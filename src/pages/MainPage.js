@@ -5,7 +5,7 @@ import '../App.css';
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-let searchtopic = 'news'
+let searchtopic = 'tech'
 
 var options = {
     method: 'GET',
@@ -30,7 +30,6 @@ class Mainpage extends Component {
         .catch(function (error) {
             console.error(error);
         });
-
     }
 
     render(){
