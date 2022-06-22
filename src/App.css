@@ -1,3 +1,50 @@
+@keyframes fade-in {
+   from {
+     opacity: 0;
+    
+    
+   }
+   to {
+     opacity: 1;
+  
+     
+   }
+ }
+ 
+ @keyframes fade-out {
+   from {
+     opacity: 1;
+     font-size: 0.5em;
+   }
+   to {
+     opacity: 0;
+     font-size: 0em;
+   }
+ }
+
+
+
+#item #content {
+ display: none;
+ font-size: 12px;
+}
+
+#item:hover #content {
+ display: block;
+ animation: fade-in 0.25s;
+}
+
+#item:not(:hover) #content.did-fade-in {
+ display: block;
+ animation: fade-out 0.25s;
+}
+
+h3{
+font-weight: lighter;
+
+}
+
+
 #head{
    position: relative;
    font-size: 3.5em;
@@ -11,23 +58,30 @@
  width:90%;
  column-count: 2;
  text-align: center;
+ display: inline-block;
 }
+
+
 
 #item{
    border-radius: 25px;
    border: 0.1px solid black;
    align-self: center;
-   background-color: rgba(47, 47, 47, 0.3);
+  
+
    
    margin: 2em;
+   display: inline-block;
+   transition-duration: .25s;
 }
 #item:hover{
    border-radius: 25px;
-   border: 0.5px solid;
+   border: 0.3px solid;
    
-   background-color: rgba(255, 255, 255, 0.3);
+   background-color: rgba(255, 255, 255, 0.05);
    transition-duration: .25s;
-   margin: 1em;
+   transform: scale(1.01);
+
 }
 
 #words{
@@ -36,6 +90,14 @@
    position: relative;
    top: 50%;
    padding: 1em;
+   
+ 
+}
+
+#words h1{
+   
+font-size: 1.5em;
+   
  
 }
 

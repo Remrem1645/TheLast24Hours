@@ -1,17 +1,36 @@
 import '../App.css';
  function NewsItems(props){
+
+    document.addEventListener('animationstart', function (e) {
+        if (e.animationName === 'fade-in') {
+            e.target.classList.add('did-fade-in');
+        }
+      });
+
+      document.addEventListener('animationend', function (e) {
+        if (e.animationName === 'fade-out') {
+            e.target.classList.remove('did-fade-in');
+         }
+      });
+
     return (
         <ul key = {props.key}>
         <div id = "item">
-        <div>
+        
                 <img src = {props.image} alt = {props.title} id="pic"/>
-            </div>
+           
             <div id = "words">
                 <h1>{props.title}</h1>
-                <h3>{props.excerpt}</h3>
-                <p>Rating: {props.rateScore}</p>
-                <p>Source: {props.website}</p>
-            </div>
+                   <div id = "content">
+                   <h3>{props.excerpt}</h3>
+                   
+                    <p>Rating: {props.rateScore}</p>
+                    <p>Source: {props.website}</p>
+
+                   </div>
+              
+                </div>
+           
         </div>         
         </ul>
     )
