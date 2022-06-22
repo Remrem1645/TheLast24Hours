@@ -1,7 +1,7 @@
 @keyframes fade-in {
    from {
      opacity: 0;
-    
+      
     
    }
    to {
@@ -15,10 +15,12 @@
    from {
      opacity: 1;
      font-size: 0.5em;
+   
    }
    to {
      opacity: 0;
      font-size: 0em;
+  
    }
  }
 
@@ -36,8 +38,10 @@
 
 #item:not(:hover) #content.did-fade-in {
  display: block;
+ 
  animation: fade-out 0.25s;
 }
+
 
 h3{
 font-weight: lighter;
@@ -60,12 +64,24 @@ font-weight: lighter;
  text-align: center;
  display: inline-block;
 }
-
+/*
+#content button{
+   position: relative;
+   height: 3em;
+   width: 15em;
+   background-color: transparent;
+   border: 3px solid #fff;
+   color: #fff;
+   cursor: pointer;
+   transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); 
+   
+}
+*/
 
 
 #item{
    border-radius: 25px;
-   border: 0.1px solid black;
+   border: 0.1px solid #272727;
    align-self: center;
   
 
@@ -76,8 +92,8 @@ font-weight: lighter;
 }
 #item:hover{
    border-radius: 25px;
-   border: 0.3px solid;
-   
+   border: 0.1px solid white;
+   cursor: pointer;
    background-color: rgba(255, 255, 255, 0.05);
    transition-duration: .25s;
    transform: scale(1.01);
@@ -96,7 +112,7 @@ font-weight: lighter;
 
 #words h1{
    
-font-size: 1.5em;
+font-size: 22px;
    
  
 }

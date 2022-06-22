@@ -23,9 +23,10 @@ import '../App.css';
                 <h1>{props.title}</h1>
                    <div id = "content">
                    <h3>{props.excerpt}</h3>
-                   
-                    <p>Rating: {props.rateScore}</p>
+
                     <p>Source: {props.website}</p>
+                    
+                    
 
                    </div>
               
