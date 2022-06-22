@@ -1,4 +1,9 @@
 function SettingsPage() {
+    return(
+        <div>
+            
+        </div>
+    )
 
 }
 

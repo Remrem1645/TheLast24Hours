@@ -5,7 +5,7 @@ import '../App.css';
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-let searchtopic = 'GAMING'
+let searchtopic = 'news'
 
 var options = {
     method: 'GET',
@@ -36,7 +36,7 @@ class Mainpage extends Component {
     render(){
         return ( 
             <section>
-                <h1 id="head">24 Hour News</h1>
+                <h1 id="head">What's Happening?</h1>
                 <NewsItemsList newsItems = {this.state.articles} id = "list"/>
             </section>
         )

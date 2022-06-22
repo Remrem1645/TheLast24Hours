@@ -1,7 +1,8 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Mainpage from './pages/MainPage';
-import TabOpen from './pages/TabOpen';
+import SettingsPage from './pages/SettingsPage'
+import About from './pages/About';
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Mainpage />} />
-        <Route path="/tabopen" element={<TabOpen />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
