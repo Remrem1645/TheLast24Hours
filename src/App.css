@@ -1,71 +1,65 @@
 @keyframes fade-in {
    from {
-     opacity: 0;
-      
-    
+      opacity: 0;
    }
+
    to {
-     opacity: 1;
-  
-     
+      opacity: 1;
    }
- }
- 
- @keyframes fade-out {
+}
+
+@keyframes fade-out {
    from {
-     opacity: 1;
-     font-size: 0.5em;
-   
+      opacity: 1;
+      font-size: 0.5em;
+
    }
+
    to {
-     opacity: 0;
-     font-size: 0em;
-  
+      opacity: 0;
+      font-size: 0em;
+
    }
- }
-
-
+}
 
 #item #content {
- display: none;
- font-size: 12px;
+   display: none;
+   font-size: 12px;
 }
 
 #item:hover #content {
- display: block;
- animation: fade-in 0.25s;
+   display: block;
+   animation: fade-in 0.25s;
 }
 
 #item:not(:hover) #content.did-fade-in {
- display: block;
- 
- animation: fade-out 0.25s;
+   display: block;
+   animation: fade-out 0.25s;
 }
 
 
-h3{
-font-weight: lighter;
-
+h3 {
+   font-weight: lighter;
 }
 
-
-#head{
+#head {
    position: relative;
    font-size: 3.5em;
    margin: 1em;
-   color:rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
    font-family: 'Bebas Neue', cursive;
    font-family: 'Caveat', cursive;
 }
-#list{
 
- width:100%;
- column-count: 2;
- text-align: center;
+#list {
+   width: 100%;
+   column-count: 2;
+   text-align: center;
 
- /*display: inline-block;*/
- left: 5%;
+   /*display: inline-block;*/
+   left: 5%;
 }
+
 /*
 #content button{
    position: relative;
@@ -76,57 +70,53 @@ font-weight: lighter;
    color: #fff;
    cursor: pointer;
    transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); 
-   
 }
 */
 
 
-#item{
+#item {
    border-radius: 25px;
-   border: 0.1px solid #272727;
+   border: 0.1px solid #505050;
    align-self: center;
    height: 30%;
    width: 80%;
+   /*max-width: 560px;   maybe set a max width */
    left: 5%;
    text-overflow: ellipsis;
 
- 
+   background-color: #333333;
+
    margin: 20px;
    display: inline-block;
    transition-duration: .25s;
 }
-#item:hover{
+
+#item:hover {
    border-radius: 25px;
    border: 0.1px solid white;
    cursor: pointer;
    background-color: rgba(255, 255, 255, 0.05);
    transition-duration: .25s;
    transform: scale(1.01);
-
 }
 
-#words{
-   
+#words {
    color: rgb(255, 255, 255);
+   height: 25%;
    position: relative;
-   
-   
-   
- 
 }
 
-#words h1{
-   
-font-size: 22px;
-   
- 
+#words h1 {
+   font-size: 22px;
 }
 
-#pic{
-   height: 250px; /* play around with this number until you get the height you need */
+#pic {
+   height: 325px;
+   /* play around with this number until you get the height you need */
    /*width: auto;*/
    width: 100%;
    object-fit: cover;
+   background-color: black;
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
 

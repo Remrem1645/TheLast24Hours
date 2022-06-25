@@ -1,10 +1,11 @@
+import styles from './SettingsPage.module.css'
+import UserInterests from "../componets/UserInterest";
+
 function SettingsPage() {
     return(
-        <div>
-            
-        </div>
+        <UserInterests />
     )
-
 }
 
 export default SettingsPage
+
