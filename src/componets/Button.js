@@ -13,7 +13,6 @@ export const Button = ({
     buttonSize,
     redirect,
 }) => {
-    console.log(redirect)
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle
         : STYLES[0]

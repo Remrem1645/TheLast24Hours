@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Interests from "./Interests";
 
 function UserInterests () {
     const [interest, setInterest] = useState(null)
@@ -13,7 +14,6 @@ function UserInterests () {
         }
     }
 
-    console.log(list) // EXPORT THIS DATA SOMEHOW LOL
 
     return (
         <div>
@@ -28,7 +28,7 @@ function UserInterests () {
                     <li id={mapData.interest}>{mapData.interest}</li>
                 </div>)
             }
-            
+            <Interests list = {list} />
         </div>
     )
 }
