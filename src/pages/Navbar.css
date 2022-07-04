@@ -96,9 +96,11 @@
     .nav-menu.active {
         background: #242222;
         left: 0;
-        opacity: 1;
+        opacity: 0.9;
         transition: all 0.5s ease;
         z-index: 1;
+        height: 100vh;
+
     }
 
     .nav-links {

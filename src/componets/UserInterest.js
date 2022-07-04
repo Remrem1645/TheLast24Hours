@@ -28,6 +28,7 @@ function UserInterests () {
                     <li id={mapData.interest}>{mapData.interest}</li>
                 </div>)
             }
+            
         </div>
     )
 }

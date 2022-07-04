@@ -52,7 +52,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>Settings</Button>}
+                    {button && <Button buttonStyle='btn--outline' redirect = '/settings' >Settings</Button>}
                 </div>
             </nav>
         </>
