@@ -5,7 +5,7 @@ import '../App.css';
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-let searchtopic = 'tech'
+let searchtopic = 'GAMING'
 
 var options = {
     method: 'GET',
