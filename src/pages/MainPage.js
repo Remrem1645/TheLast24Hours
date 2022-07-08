@@ -13,11 +13,6 @@ try {
     searchtopic = 'tech';
 }
 
-
-console.log(searchtopic)
-
-
-
 var options = {
     method: 'GET',
     url: 'https://api.newscatcherapi.com/v2/search',
@@ -38,9 +33,9 @@ class Mainpage extends Component {
             console.log(response.data);
             this.setState({ articles: response.data["articles"] });
         })
-            .catch(function (error) {
+        .catch(function (error) {
                 console.error(error);
-            });
+        });
     }
 
     render() {
