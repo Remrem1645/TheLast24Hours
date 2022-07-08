@@ -5,7 +5,21 @@ import '../App.css';
 var axios = require("axios").default;
 const API_KEY = process.env.REACT_APP_API_KEY;
 
-let searchtopic = 'GAMING'
+let searchtopic = 'ds';
+
+console.log(searchtopic)
+
+
+let userInterestsImport = (USI) => {
+    searchtopic = USI;
+    return searchtopic;
+}
+
+searchtopic = userInterestsImport()
+
+console.log(searchtopic)
+
+
 
 var options = {
     method: 'GET',
@@ -32,7 +46,7 @@ class Mainpage extends Component {
         });
     }
 
-    render(){
+    render() {
         return ( 
             <section>
                 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600&display=swap" rel="stylesheet"></link>

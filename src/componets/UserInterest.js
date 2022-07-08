@@ -14,6 +14,10 @@ function UserInterests () {
         }
     }
 
+    const handleRemove = (interest) => {
+        const newList = list.filter((mapData) => mapData.interest !== interest);
+        setList(newList);
+    }
 
     return (
         <div>
@@ -26,6 +30,9 @@ function UserInterests () {
                 list.map((mapData) => 
                 <div>
                     <li id={mapData.interest}>{mapData.interest}</li>
+                    <button type="button" onClick={() => handleRemove(mapData.interest)}>
+                        Remove
+                    </button>
                 </div>)
             }
             <Interests list = {list} />
