@@ -3,9 +3,10 @@ let Interests = (list) => {
     let userInterestString = ''
     let data = list.list;
 
+
     if(data.length < 2){
         data.map((mapdata) => {
-            userInterestString = mapdata;
+            userInterestString = mapdata.interest;
             return userInterestString;
         })
     }
@@ -18,8 +19,14 @@ let Interests = (list) => {
         userInterestString = userInterestString.substring(0, userInterestString.length - 4);
     }
 
+    console.log(userInterestString);
     return (
-        <userInterestsImport USI = {userInterestString}/>
+        <>
+            {
+                localStorage.setItem('userDataString', JSON.stringify(userInterestString))
+            }
+        </>
+
     )
 }
 

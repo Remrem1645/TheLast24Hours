@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import Interests from "./Interests";
 
+
 function UserInterests () {
+
+    let localUser;
+    
+    try{
+        localUser = JSON.parse(localStorage.getItem('userData'));
+    } catch {
+        localUser = [];
+    }
+
+
     const [interest, setInterest] = useState(null)
-    const [list, setList] = useState([]);
+    const [list, setList] = useState(localUser);
 
     const handleSubmit = (handledata) => {
         handledata.preventDefault();
@@ -26,6 +37,9 @@ function UserInterests () {
                 <input type="text" onChange={(data) => setInterest(data.target.value)} />
                 <button>Add</button>
             </form>
+            {
+            localStorage.setItem('userData', JSON.stringify(list))
+            }
             {
                 list.map((mapData) => 
                 <div>

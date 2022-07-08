@@ -5,7 +5,7 @@ function NewsItemsList (props) {
 
     return (
         <ul id = "list">
-            {props.newsItems.map(data => (
+            {props.newsItems?.map(data => (
                 <NewsItems
                     key = {data._id}
                     title = {data.title}
